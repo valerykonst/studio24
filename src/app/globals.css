@@ -1,3 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.top-container {
+  min-height: 662px;
+  padding: 40px 80px;
+  background: url(/images/photo.png) no-repeat right top;
+  background-size: 1440px 662px;
+}
+.top-container .logo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 345px;;
+}
+.top-container .logo > div:last-child {
+  padding-left: 16px;
+  border-left: solid 0.5px #28242A;
+  font-size: 14px;
+  line-height: 100%;
+}
+.top-container .largeText {
+  margin-top: 18px;
+  color: #28242A;
+  font-size: 83px;
+  font-weight: 900;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+.top-container .largeText span {
+  background: -webkit-linear-gradient(90deg, #A559FA 0%, #6200D1 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.subspancolor span {
+  color: #6200D1;
+}
+.cntr {
+  padding: 14px 14px 14px 78px;
+}
+.cntr.birthday {
+  background: url(/images/noto_birthday-cake.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.anniversary {
+  background: url(/images/noto_bouquet.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.anniversary2 {
+  background: url(/images/noto_growing-heart.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.wedding {
+  background: url(/images/noto_wedding.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.job {
+  background: url(/images/noto_briefcase.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.party {
+  background: url(/images/noto_man-dancing.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.party2 {
+  background: url(/images/noto_party-popper.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.ghost {
+  background: url(/images/noto_ghost.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.guitar {
+  background: url(/images/noto_guitar.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.gift {
+  background: url(/images/noto_wrapped-gift.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.sorry {
+  background: url(/images/noto_folded-hands.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+.cntr.love {
+  background: url(/images/noto_heart-with-ribbon.png) no-repeat 10px center #FAFAFA;
+  background-size: 50px 50px;
+}
+
+.holiday-cntr {
+  width: 32%;
+  margin-bottom: 20px;;
+}
+
+.story-cntr {
+  margin: 100px 0;
+  padding: 70px 80px;
+  background: linear-gradient(273.21deg, #3B007E 0%, #6B00E4 100%);
+}
+.story-cntr .bgOne,.story-cntr .bgTwo,.story-cntr .bgThree {
+  width: 400px;
+  padding-top: 20px;
+  min-height: 154px;
+}
+.story-cntr .bgOne {
+  background: url(/images/1.svg) no-repeat left top;
+}
+.story-cntr .bgTwo {
+  background: url(/images/2.svg) no-repeat 16px top;
+}
+.story-cntr .bgThree {
+  background: url(/images/3.svg) no-repeat left top;
+}
+.audio-wrapper {
+  width: 292px;
+}
+.audio-cntr {
+  width: 292px;
+  height: 132px;
+  background: url(/images/music_bg.png) no-repeat center;
+  background-size: cover;
+  border-radius: 18px;
+  position: relative;
+}
+.audio-cntr .avatar {
+  width: 60px;
+  height: 60px;
+  background: url(/images/icon-music.svg) no-repeat center;
+  background-size: cover !important;
+  border-radius: 6px;
+  position: absolute;
+  top: -17px;
+  left: 10px;
+}
+.audio-cntr .avatar.avatar-anniversary {
+  background: url(/images/clients/Photo@2x.png) no-repeat center;
+} 
+.audio-cntr .avatar.avatar-birthday {
+  background: url(/images/clients/Photo@2x-1.png) no-repeat center;
+} 
+.audio-cntr .avatar.avatar-husband {
+  background: url(/images/clients/icon@2x.png) no-repeat center;
+} 
+.audio-cntr .avatar.avatar-granny {
+  background: url(/images/clients/icon@2x-1.png) no-repeat center;
+} 
+.audio-cntr .avatar.avatar-woman {
+  background: url(/images/clients/Photo@2x-2.png) no-repeat center;
+} 
+
+.audio-cntr .butt.play {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  background: url(/images/play.svg) no-repeat center;
+  background-size: cover;
+  border-radius: 36px;
+  position: relative;
+  top: 28px;
+  cursor: pointer;
+}
+.audio-cntr .butt.pause {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  background: url(/images/pause.svg) no-repeat center;
+  background-size: cover;
+  border-radius: 36px;
+  position: relative;
+  top: 44px;
+  cursor: pointer;
+}
+
+.create-cntr {
+  margin: 100px 0;
+  min-height: 349px;
+  background: url(/images/img_man.png) no-repeat left top, linear-gradient(269.67deg, #6B00E4 2.68%, #3B007E 43.63%);
+  background-size: contain;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #28242A;
+}
+
+@media screen and (max-width: 1023px) {
+  .holiday-cntr {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .top-container {
+    padding: 25px 20px;
+    min-height: auto;
+  }
+  .top-container .largeText {
+    font-size: 53px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .top-container .largeText span {
+    display: block;
+    font-size: 42px;
+  }
+  .holiday-cntr {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .story-cntr {
+    margin: 54px 0;
+    padding: 50px 20px;
+  }
+  .story-cntr .bgOne,.story-cntr .bgTwo,.story-cntr .bgThree {
+    width: 100%;
+  }
+  .story-cntr .bgTwo {
+  background-position-x: 0;
+  }
+
+}
+
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
