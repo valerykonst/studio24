@@ -200,6 +200,38 @@
   margin: 0 auto;
 }
 
+details {
+  
+}
+details p {
+  padding: 15px;
+  border-top: 1px solid #B8A5EF;
+}
+details summary {
+  padding: 15px 50px 15px 15px;
+  border-top: 1px solid #B8A5EF;
+  font-weight: bold;
+  position: relative;
+}
+details summary::marker {
+  content: "";
+}
+details summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  color: #6200D1;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 0.5em;;
+}
+details[open] summary::after {
+  transform: rotate(45deg);
+}
+details:last-child {
+  border-bottom: 1px solid #B8A5EF;
+} 
 
 main {
   background: url(/images/photo.png) no-repeat right top;

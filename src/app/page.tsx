@@ -9,7 +9,7 @@ import AudioComponent from "./components/AudioComponent";
     const dictionary = await getDictionary("ru" as Locale);
 
 const t = (str:string):string => {
-  return str.replace("{","<span>")
+  return str.replaceAll("{","<span>")
     .replaceAll("}","</span>")
     .replaceAll("[","<b>")
     .replaceAll("]","</b>")
@@ -253,7 +253,7 @@ export default function Home() {
       <p className="px-5 mb-4 text-xl sm:text-2xl font-bold text-center">
         {dictionary.main[61]}
       </p>
-      <div className="flex justify-center gap-9 mb-7 sm:mb-10 mx-5 sm:mx-28 pt-6 overflow-x-auto">
+      <div className="flex justify-normal lg:justify-center gap-9 mb-7 sm:mb-10 mx-5 sm:mx-28 pt-6 overflow-x-auto">
         <AudioComponent 
           src="/audio/wedding-anniversary.mp3"
           title={dictionary.main[62]}
@@ -273,7 +273,7 @@ export default function Home() {
       <p className="px-5 mb-4 text-xl sm:text-2xl font-bold text-center">
         {dictionary.main[65]}
       </p>
-      <div className="flex justify-center gap-9 mb-7 sm:mb-10 mx-5 sm:mx-28 pt-6 overflow-x-auto">
+      <div className="flex justify-normal lg:justify-center gap-9 mb-7 sm:mb-10 mx-5 sm:mx-28 pt-6 overflow-x-auto">
         <AudioComponent 
           src="/audio/birthday.mp3"
           title={dictionary.main[66]}
@@ -293,7 +293,7 @@ export default function Home() {
       <p className="px-5 mb-4 text-xl sm:text-2xl font-bold text-center">
         {dictionary.main[69]}
       </p>
-      <div className="flex justify-center gap-9 mb-7 sm:mb-10 mx-5 sm:mx-28 pt-6 overflow-x-auto">
+      <div className="flex justify-normal lg:justify-center gap-9 mb-7 sm:mb-10 mx-5 sm:mx-28 pt-6 overflow-x-auto">
         <AudioComponent 
           src="/audio/granny.mp3"
           title={dictionary.main[70]}
@@ -422,7 +422,7 @@ export default function Home() {
       <div className="page-cntr">
         <div className="flex flex-col items-center lg:items-start lg:flex-row gap-0 sm:gap-10 mx-5 sm:mx-20 mb-14 sm:mb-24 ">
           <div>
-            <Image alt='' src="/images/img_player.png" width={519} height={480} className="w-[360px] h-[333px] sm:w-[519px] sm:h-[480px] max-w-0" />
+            <Image style={{maxWidth:'auto'}} alt='' src="/images/img_player.png" width={519} height={480} className="w-[360px] h-[333px] sm:w-[519px] sm:h-[480px]" />
           </div>
           <div>
               <p className="text-xl text-center sm:text-left sm:text-2xl font-bold mt-8 mb-2 uppercase">
@@ -446,11 +446,62 @@ export default function Home() {
               <button className="bg-green-500 rounded-full text-white text-xl font-semibold w-full sm:w-auto px-20 py-3 sm:py-6  mt-6 sm:mt-[55px] hover:bg-green-600 transition">
                 {dictionary.main[8]}
               </button>
-
           </div>
         </div>
       </div>
 
+      <p className="mx-5 text-xl sm:text-2xl font-bold text-center uppercase mb-2">
+        {dictionary.main[120]}
+      </p>
+      <div className="rounded bg-violet-400 w-28 h-1 m-auto"></div>
+      <p className="mt-2 mb-10 px-5 text-center text-sm sm:text-lg ">
+        {dictionary.main[121]}
+      </p>
+      <div className="page-cntr">
+        <div className="px-5 lg:px-60 mb-24">
+        <details>
+          <summary>{dictionary.faq[1]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[2])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[3]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[4])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[5]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[6])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[7]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[8])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[9]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[10])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[11]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[12])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[13]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[14])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[15]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[16])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[17]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[18])}}/>
+        </details>  
+        <details>
+          <summary>{dictionary.faq[19]}</summary>
+          <p dangerouslySetInnerHTML={{__html:t(dictionary.faq[20])}}/>
+        </details>  
+
+        </div>
+      </div>
     </main>
   );
 }
