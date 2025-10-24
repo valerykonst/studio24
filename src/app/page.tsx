@@ -339,6 +339,118 @@ export default function Home() {
         <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-5/12 sm:w-auto" />
       </div>
 
+      <div className="page-cntr">
+      <div className="garanty-cntr rounded-xl mx-5 lg:mx-60">
+        <div className="rounded-xl px-7 py-5 bg-white ml-0 sm:ml-56 mt-40 sm:mt-0">
+          <p className="text-xl sm:text-2xl font-bold">
+            {dictionary.main[99]}
+          </p>
+          <p className="text-sm text-gray-500 mb-7">
+            {dictionary.main[100]}
+          </p>
+          <p className="font-bold mb-4">
+            {dictionary.main[101]}
+          </p>
+          <div>
+            <div className="flex mb-4 gap-4">
+              <div className="bg-violet-700 text-white font-semibold flex-shrink-0 w-7 h-7 rounded-3xl flex justify-center items-center">1</div>
+              <div>
+                <p dangerouslySetInnerHTML={{__html: t(dictionary.main[102]) }} />
+              </div>
+            </div>            
+            <div className="flex mb-4 gap-4">
+              <div className="bg-violet-700 text-white font-semibold flex-shrink-0 w-7 h-7 rounded-3xl flex justify-center items-center">2</div>
+              <div>
+                <p dangerouslySetInnerHTML={{__html: t(dictionary.main[103]) }} />
+              </div>
+            </div>            
+            <div className="flex mb-4 gap-4">
+              <div className="bg-violet-700 text-white font-semibold flex-shrink-0 w-7 h-7 rounded-3xl flex justify-center items-center">3</div>
+              <div>
+                <p dangerouslySetInnerHTML={{__html: t(dictionary.main[104]) }} />
+              </div>
+            </div>            
+            <div className="flex mb-4 gap-4">
+              <div className="bg-violet-700 text-white font-semibold flex-shrink-0 w-7 h-7 rounded-3xl flex justify-center items-center">4</div>
+              <div>
+                <p dangerouslySetInnerHTML={{__html: t(dictionary.main[105]) }} />
+              </div>
+            </div>            
+          </div>
+          <p dangerouslySetInnerHTML={{__html: t(dictionary.main[106]) }} />
+        </div>
+      </div>
+      </div>
+
+      <div className="numbers-cntr">
+        <div className="page-cntr flex flex-col lg:flex-row justify-center gap-10 py-11 px-5 sm:px-20">
+          <div>
+            <div className="mb-3 text-4xl sm:text-7xl font-semibold text-white">
+              {dictionary.main[107]}
+            </div>
+            <div className="text-white">
+              {dictionary.main[108]}
+            </div>
+          </div>
+          <div>
+            <div className="mb-3 text-4xl sm:text-7xl font-semibold text-white">
+              {dictionary.main[109]}
+            </div>
+            <div className="text-white">
+              {dictionary.main[110]}
+            </div>
+          </div>
+          <div>
+            <div className="mb-3 text-4xl sm:text-7xl font-semibold text-white">
+              {dictionary.main[111]}
+            </div>
+            <div className="text-white">
+              {dictionary.main[112]}
+            </div>
+          </div>
+          <div>
+            <div className="mb-3 text-4xl sm:text-7xl font-semibold text-white">
+              {dictionary.main[113]}
+            </div>
+            <div className="text-white">
+              {dictionary.main[114]}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="page-cntr">
+        <div className="flex flex-col items-center lg:items-start lg:flex-row gap-0 sm:gap-10 mx-5 sm:mx-20 mb-14 sm:mb-24 ">
+          <div>
+            <Image alt='' src="/images/img_player.png" width={519} height={480} className="w-[360px] h-[333px] sm:w-[519px] sm:h-[480px] max-w-0" />
+          </div>
+          <div>
+              <p className="text-xl text-center sm:text-left sm:text-2xl font-bold mt-8 mb-2 uppercase">
+                {dictionary.main[115]}
+              </p>
+              <p className="text-sm sm:text-lg text-center sm:text-left">
+                {dictionary.main[116]}
+              </p>
+              <div className="flex gap-2.5 mt-6 items-center">
+                <Image alt='' src="/images/check.svg" width={44} height={44} />
+                <p className="text-sm sm:text-lg" dangerouslySetInnerHTML={{__html:t(dictionary.main[117])}} /> 
+              </div>
+              <div className="flex gap-2.5 mt-6 items-center">
+                <Image alt='' src="/images/check.svg" width={44} height={44} />
+                <p className="text-sm sm:text-lg" dangerouslySetInnerHTML={{__html:t(dictionary.main[118])}} /> 
+              </div>
+              <div className="flex gap-2.5 mt-6 items-center">
+                <Image alt='' src="/images/check.svg" width={44} height={44} />
+                <p className="text-sm sm:text-lg" dangerouslySetInnerHTML={{__html:t(dictionary.main[119])}} /> 
+              </div>
+              <button className="bg-green-500 rounded-full text-white text-xl font-semibold w-full sm:w-auto px-20 py-3 sm:py-6  mt-6 sm:mt-[55px] hover:bg-green-600 transition">
+                {dictionary.main[8]}
+              </button>
+
+          </div>
+        </div>
+      </div>
+
     </main>
   );
 }
