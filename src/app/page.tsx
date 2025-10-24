@@ -10,10 +10,10 @@ import AudioComponent from "./components/AudioComponent";
 
 const t = (str:string):string => {
   return str.replace("{","<span>")
-    .replace("}","</span>")
-    .replace("[","<b>")
-    .replace("]","</b>")
-    .replace("\n","<br /><br />")
+    .replaceAll("}","</span>")
+    .replaceAll("[","<b>")
+    .replaceAll("]","</b>")
+    .replaceAll("\n","<br />")
 }
 
 const Video = ({src}:{src:string}) => {
@@ -76,7 +76,7 @@ export default function Home() {
           {dictionary.main[9]}
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-5 justify-between mt-6 sm:mt-10 px-5 sm:px-20">
+      <div className="page-cntr flex flex-col md:flex-row gap-5 justify-between mt-6 sm:mt-10 px-5 sm:px-20">
           <div className="flex align-top gap-3">
             <div><Image className="mt-1" alt='' src="/images/face-content.svg" width={30} height={30} /></div>
             <div>
@@ -105,6 +105,7 @@ export default function Home() {
           {dictionary.main[17]}
         </p>
       </div>
+      <div className="page-cntr">
       <div className="flex mx-5 sm:mx-20 mt-6 mb-9 overflow-x-auto gap-4">
         <Video src="/videos/IMG_6540.MOV" />
         <Video src="/videos/IMG_6536.MOV" />
@@ -116,13 +117,14 @@ export default function Home() {
         <Video src="/videos/IMG_6543.MOV" />
         <Video src="/videos/IMG_6544.MOV" />
       </div>
+      </div> 
       <p className="mt-12 sm:mt-24 px-5 text-xl sm:text-2xl font-bold text-center  uppercase">
         {dictionary.main[18]}
       </p>
       <p className="mt-2 mb-9 px-5 text-center sm:text-lg ">
         {dictionary.main[19]}
       </p>
-      <div className="px-5 sm:px-20 flex flex-wrap gap-[2%]">
+      <div className="page-cntr px-5 sm:px-20 flex flex-wrap gap-[2%]">
         <div className="holiday-cntr rounded-xl cntr birthday flex-shrink-0">
           <div className="mb-2 text-lg font-bold">{dictionary.main[20]}</div>
           <div className="text-sm">{dictionary.main[21]}</div>
@@ -173,6 +175,7 @@ export default function Home() {
         </div>  
       </div>
       <div className="story-cntr">
+        <div className="page-cntr">
         <p className="text-white text-xl sm:text-2xl mb-2 font-bold text-center uppercase">
           {dictionary.main[44]}
         </p>
@@ -205,6 +208,7 @@ export default function Home() {
              </div>
           </div>
         </div>
+        </div>
       </div>
       <p className="mx-5 text-xl sm:text-2xl font-bold text-center uppercase">
         {dictionary.main[124]}
@@ -212,6 +216,7 @@ export default function Home() {
       <div className="mx-5">
         <Image alt='' src="/images/video-author.png" width={629} height={393} className="mx-auto mt-6 sm:mt-9 mb-14 sm:mb-24 rounded-xl" />
       </div>
+      <div className="page-cntr">
       <div className="bg-[#FAFAFA] border border-violet-200 rounded-xl py-5 sm:py-7 px-4 sm:px-14 mb-12 sm:mb-24 mx-5 lg:mx-60">
         <p className="text-xl sm:text-2xl font-bold text-center  uppercase">
           {dictionary.main[52]}
@@ -237,6 +242,7 @@ export default function Home() {
             <div className="mt-2 text-sm">{dictionary.main[58]}</div>
           </div>
         </div>
+      </div>
       </div>  
       <p className="text-xl sm:text-2xl font-bold text-center uppercase">
         {dictionary.main[59]}
@@ -306,12 +312,31 @@ export default function Home() {
       </div>
 
       <div className="create-cntr flex flex-row-reverse py-11 px-20">
-        <div className="text-white w-3/5">
+        <div className="text-white lg:w-3/5">
           <p className="text-xl sm:text-2xl font-bold mb-5 uppercase">
             {dictionary.main[95]}
           </p>
           <p dangerouslySetInnerHTML={{ __html: t(dictionary.main[96]) }} className="sm:text-lg" />
         </div>
+      </div>
+
+      <p className="mx-5 text-xl sm:text-2xl font-bold text-center uppercase mb-2">
+        {dictionary.main[97]}
+      </p>
+      <p className="mb-4 px-5 text-center text-sm sm:text-lg ">
+        {dictionary.main[98]}
+      </p>
+      <div className="page-cntr reviews-cntr mb-20 px-5 lg:px-48 flex flex-wrap gap-2.5 justify-center">
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-6/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-5/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-5/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-6/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-6/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-5/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-5/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-6/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-6/12 sm:w-auto" />
+        <Image alt='' src="/images/reviews/1.png" width={181} height={121} className="rounded-xl w-5/12 sm:w-auto" />
       </div>
 
     </main>
